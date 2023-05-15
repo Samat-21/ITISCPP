@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(hw07)
+
+find_package(Boost COMPONENTS system)
+
+add_executable(hw07 hw07.cpp)
+target_link_libraries(hw07 ${Boost_SYSTEM_LIBRARY})
